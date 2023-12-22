@@ -29,23 +29,23 @@ components:
     layout_properties: {width: 833.1500244140625, expand: true}
     components:
     - name: link_8_copy
-      properties: {text: Home, align: right, bold: false, foreground: '#000', font_size: 15}
+      properties: {text: Home, align: right, bold: false, foreground: '#000', font_size: 18}
       type: Link
       layout_properties: {grid_position: 'JXFFNM,FKFVNM'}
       event_bindings: {click: link_8_copy_click}
     - name: link_9_copy
-      properties: {text: About, align: center, bold: false, foreground: black, font_size: 15,
+      properties: {text: About, align: center, bold: false, foreground: black, font_size: 18,
         col_spacing: tiny}
       type: Link
       layout_properties: {grid_position: 'JXFFNM,LDONGM'}
     - name: link_10_copy
       properties: {text: User Support, bold: false, align: center, foreground: black,
-        font_size: 15, background: white}
+        font_size: 18, background: white}
       type: Link
       layout_properties: {grid_position: 'JXFFNM,EKRNNM', full_width_row: true}
       event_bindings: {click: link_10_copy_click}
     - name: button_8
-      properties: {text: Logout, role: filled-button, background: '#1d86da'}
+      properties: {text: Logout, role: filled-button, background: '#1d86da', font_size: 18}
       type: Button
       layout_properties: {grid_position: 'JXFFNM,DAOHBK'}
       event_bindings: {click: button_8_click}
