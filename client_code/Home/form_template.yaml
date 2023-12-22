@@ -38,33 +38,33 @@ components:
       name: column_panel_1
       components:
       - properties: {text: Deposit, align: right, bold: false, foreground: '#000',
-          font_size: 15}
+          font_size: 18}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,FKFVNM'}
         event_bindings: {}
         name: link_8
       - properties: {text: Money Transfer, align: center, bold: false, foreground: black,
-          font_size: 15, col_spacing: tiny}
+          font_size: 18, col_spacing: tiny}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,LDONGM'}
         name: link_9
       - properties: {text: 'Withdraw ', bold: false, align: center, foreground: black,
-          font_size: 15, background: white}
+          font_size: 18, background: white}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,EKRNNM', full_width_row: true}
         event_bindings: {}
         name: link_10
       - properties: {text: Career, align: center, bold: false, foreground: black,
-          font_size: 15}
+          font_size: 18}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,CLCQWK'}
         name: link_12
       - properties: {text: 'Company  ', align: center, bold: false, foreground: black,
-          font_size: 15}
+          font_size: 18}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,VLVRBN'}
         name: link_11
-      - properties: {text: 'Login      ', bold: true, foreground: white, font_size: 15,
+      - properties: {text: 'Login      ', bold: true, foreground: white, font_size: 18,
           role: filled-button, background: '#258ee1'}
         type: Button
         layout_properties: {grid_position: 'JXFFNM,GIPCOP'}
