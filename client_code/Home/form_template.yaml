@@ -37,29 +37,28 @@ components:
       layout_properties: {width: 833.1500244140625, expand: true}
       name: column_panel_1
       components:
-      - properties: {text: Deposit, align: right, bold: false, foreground: '#000',
+      - properties: {text: Deposit, align: right, bold: true, foreground: '#000',
           font_size: 18}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,FKFVNM'}
         event_bindings: {}
         name: link_8
-      - properties: {text: Money Transfer, align: center, bold: false, foreground: black,
+      - properties: {text: Money Transfer, align: center, bold: true, foreground: black,
           font_size: 18, col_spacing: tiny}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,LDONGM'}
         name: link_9
-      - properties: {text: 'Withdraw ', bold: false, align: center, foreground: black,
+      - properties: {text: 'Withdraw ', bold: true, align: center, foreground: black,
           font_size: 18, background: white}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,EKRNNM', full_width_row: true}
         event_bindings: {}
         name: link_10
-      - properties: {text: Career, align: center, bold: false, foreground: black,
-          font_size: 18}
+      - properties: {text: Career, align: center, bold: true, foreground: black, font_size: 18}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,CLCQWK'}
         name: link_12
-      - properties: {text: 'Company  ', align: center, bold: false, foreground: black,
+      - properties: {text: 'Company  ', align: center, bold: true, foreground: black,
           font_size: 18}
         type: Link
         layout_properties: {grid_position: 'JXFFNM,VLVRBN'}
