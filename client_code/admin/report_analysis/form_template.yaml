@@ -38,6 +38,7 @@ components:
         col_spacing: tiny}
       type: Link
       layout_properties: {grid_position: 'JXFFNM,LDONGM'}
+      event_bindings: {click: link_9_copy_click}
     - name: link_10_copy
       properties: {text: User Support, bold: false, align: center, foreground: black,
         font_size: 15, background: white}

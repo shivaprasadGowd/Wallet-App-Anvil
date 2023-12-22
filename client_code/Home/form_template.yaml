@@ -29,9 +29,9 @@ components:
       name: label_7_copy_2
     - properties: {height: 58.19996643066406}
       type: Spacer
-      layout_properties: {width: 342.38698779296874}
+      layout_properties: {width: 298.133}
       name: spacer_3
-    - properties: {background: white, col_widths: '{"FKFVNM":25,"LDONGM":10,"EKRNNM":5,"CLCQWK":5,"VLVRBN":5,"GIPCOP":10}',
+    - properties: {background: white, col_widths: '{"FKFVNM":20,"LDONGM":15,"EKRNNM":5,"CLCQWK":5,"VLVRBN":5,"GIPCOP":10}',
         col_spacing: medium}
       type: ColumnPanel
       layout_properties: {width: 833.1500244140625, expand: true}

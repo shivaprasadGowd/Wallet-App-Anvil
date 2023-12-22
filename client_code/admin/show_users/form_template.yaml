@@ -29,7 +29,7 @@ components:
     - name: spacer_4
       properties: {height: 46.75}
       type: Spacer
-      layout_properties: {width: 383}
+      layout_properties: {width: 341.488}
     - name: column_panel_1
       properties: {background: white, col_widths: '{"FKFVNM":26,"LDONGM":11,"EKRNNM":9,"DAOHBK":12}',
         col_spacing: medium}

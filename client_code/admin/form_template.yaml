@@ -12,8 +12,9 @@ components:
   type: Label
   layout_properties: {grid_position: 'XSXLAE,HAKDVS', slot: default}
 - name: xy_panel_1
-  properties: {role: null, width: 1446, align: center, height: 286, tooltip: '', border: '',
-    foreground: '', visible: true, spacing_above: medium, spacing_below: small, background: '#1e75b9'}
+  properties: {role: null, width: 1446, align: center, height: 319.75, tooltip: '',
+    border: '', foreground: '', visible: true, spacing_above: medium, spacing_below: small,
+    background: '#1e75b9'}
   type: XYPanel
   layout_properties: {grid_position: 'GKBHDU,PBBHOP', slot: default, full_width_row: true}
   components:
@@ -64,11 +65,11 @@ components:
       type: Label
       layout_properties: {}
     - name: spacer_4
-      properties: {height: 46.75}
+      properties: {height: 53.25}
       type: Spacer
       layout_properties: {width: 336}
     - name: column_panel_1
-      properties: {background: white, col_widths: '{"FKFVNM":26,"LDONGM":11,"EKRNNM":9,"DAOHBK":12}',
+      properties: {background: white, col_widths: '{"FKFVNM":27,"LDONGM":8,"EKRNNM":13,"DAOHBK":12}',
         col_spacing: medium}
       type: ColumnPanel
       layout_properties: {width: 833.1500244140625, expand: true}

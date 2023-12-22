@@ -26,12 +26,8 @@ components:
         font: a, italic: false, underline: false, foreground: black}
       type: Label
       layout_properties: {}
-    - name: spacer_3_copy_copy
-      properties: {height: 58.19996643066406}
-      type: Spacer
-      layout_properties: {width: 315.4630122070312}
     - name: column_panel_1_copy
-      properties: {foreground: '', col_spacing: none, col_widths: '{"DZACHX":9,"EQLJSK":9,"IYMZZI":9,"QMIILD":9,"PIMIYE":8,"YSLIKN":6,"LADGEM":10}'}
+      properties: {foreground: '', col_spacing: none, col_widths: '{"DZACHX":8,"EQLJSK":8,"QMIILD":8,"PIMIYE":7,"YSLIKN":6,"BXAHGU":6}'}
       type: ColumnPanel
       layout_properties: {width: 800, expand: false}
       components:
@@ -42,7 +38,7 @@ components:
         layout_properties: {grid_position: 'MNPBPI,DZACHX'}
         event_bindings: {click: link_2_click}
       - name: link_3
-        properties: {text: Money Transfer, bold: true, align: center, foreground: black,
+        properties: {text: Money      Transfer, bold: true, align: center, foreground: black,
           font_size: 18}
         type: Link
         layout_properties: {grid_position: 'MNPBPI,EQLJSK'}
@@ -51,7 +47,7 @@ components:
         properties: {text: Withdraw, bold: true, align: center, foreground: black,
           font_size: 18}
         type: Link
-        layout_properties: {grid_position: 'MNPBPI,IYMZZI'}
+        layout_properties: {grid_position: 'MNPBPI,ZLPWDC'}
         event_bindings: {click: link_4_click}
       - name: link_5
         properties: {align: center, bold: true, text: Company, foreground: black,
@@ -77,7 +73,7 @@ components:
         properties: {align: center, bold: true, text: Logout, foreground: black, icon: 'fa:sign-out',
           font_size: 18}
         type: Link
-        layout_properties: {grid_position: 'MNPBPI,LADGEM'}
+        layout_properties: {grid_position: 'MNPBPI,EFNOHD'}
         event_bindings: {click: link_13_click}
   - name: label_1
     properties: {text: '  View/Edit Profile', background: '#258ee0', foreground: white,

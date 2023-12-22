@@ -23,7 +23,7 @@ components:
     type: Spacer
     layout_properties: {width: 336}
   - name: column_panel_1
-    properties: {background: white, col_widths: '{"FKFVNM":26,"LDONGM":11,"EKRNNM":9,"DAOHBK":12}',
+    properties: {background: white, col_widths: '{"FKFVNM":27,"LDONGM":8,"EKRNNM":13,"DAOHBK":12}',
       col_spacing: medium}
     type: ColumnPanel
     layout_properties: {width: 833.1500244140625, expand: true}

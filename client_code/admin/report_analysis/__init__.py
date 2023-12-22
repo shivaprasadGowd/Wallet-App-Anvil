@@ -161,4 +161,8 @@ class report_analysis(report_analysisTemplate):
     def button_8_click(self, **event_args):
       """This method is called when the button is clicked"""
       open_form('Home')
+
+    def link_9_copy_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      pass
         
