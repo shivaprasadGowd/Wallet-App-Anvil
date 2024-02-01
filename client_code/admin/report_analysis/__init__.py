@@ -164,4 +164,5 @@ class report_analysis(report_analysisTemplate):
 
     def button_3_copy_click(self, **event_args):
       open_form('admin')
-        
+
+    
