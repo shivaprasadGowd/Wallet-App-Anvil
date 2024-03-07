@@ -42,3 +42,6 @@ class transaction_history(transaction_historyTemplate):
   def link_8_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("service",user=self.user)
+
+  def button_3_click(self, **event_args):
+    open_form('transfer')

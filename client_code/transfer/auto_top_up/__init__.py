@@ -23,6 +23,8 @@ class auto_top_up(auto_top_upTemplate):
 
 
   def button_1_click(self, **event_args):
+    acc = self.dropdown_account_numbers.selected_value
+    wallet3 = anvil.server.call('generate_unique_id', self.user['username'], self.user['phone'])
     self.user['top_up']= True
     self.user.update()
     self.button_1.visible = False
@@ -39,10 +41,16 @@ class auto_top_up(auto_top_upTemplate):
           print("hi I'm sending user value")
           self.deduct_currencies(final)
           anvil.server.call('update_all_rows',self.user['username'], final)
+
+          # Record successful automatic transaction and currency deduction
+          self.record_transaction("Automatic Top-Up", f"₹5000", "success")
+          
           self.button_1.visible = False
           self.button_2.visible = True
         else:
           self.label_5.text = "Insufficient Funds put money in your casa account"
+          # Record failed transaction due to insufficient funds
+          self.record_transaction("Automatic Top-Up", f"₹5000", "failed")
       else:
         return f"E-wallet balance ({money_in_emoney}) is above the threshold. No top-up needed."
     
@@ -74,17 +82,42 @@ class auto_top_up(auto_top_upTemplate):
     if conversion_usd > 5000:
         currencies_table['money_usd'] = str((conversion_usd- 5000)/80)
         currencies_table.update()
+        # Record successful deduction in the transactions table
+        self.record_transaction("Currency Deducted", "$-USD", "success")
     elif conversion_euro  > 5000:
         currencies_table['money_euro'] = str((conversion_euro- 5000)/85)
         currencies_table.update()
+        # Record successful deduction in the transactions table
+        self.record_transaction("Currency Deducted", "Є-EURO", "success")
     elif conversion_swis > 5000:
         currencies_table['money_swis'] = str((conversion_swis - 5000) / 90)
         currencies_table.update()
+        # Record successful deduction in the transactions table
+        self.record_transaction("Currency Deducted", "₣-SWIS", "success")
     elif conversion_inr > 5000:
         currencies_table['money_inr'] = str((conversion_inr - 5000) / 1)
         currencies_table.update()
+        # Record successful deduction in the transactions table
+        self.record_transaction("Currency Deducted", "₹-INR", "success")
     else:
       self.label_5.text = "Insufficient funds"
+      # Record failed deduction in the transactions table
+      self.record_transaction("Currency Deduction", "Unknown", "failed")
+
+  def record_transaction(self, transaction_type, details, proof):
+        current_datetime = datetime.now()
+        acc = self.dropdown_account_numbers.selected_value
+        wallet3 = anvil.server.call('generate_unique_id', self.user['username'], self.user['phone'])
+        app_tables.transactions.add_row(
+            user=self.user['username'],
+            casa = int(acc),
+            e_wallet=wallet3, 
+            money=details,
+            date=current_datetime,
+            transaction_type=transaction_type,
+            proof=proof
+        )
+        
 
 
   def button_2_click(self, **event_args):
@@ -120,3 +153,6 @@ class auto_top_up(auto_top_upTemplate):
   def link_13_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("Home")
+
+  def button_3_click(self, **event_args):
+    open_form('transfer')

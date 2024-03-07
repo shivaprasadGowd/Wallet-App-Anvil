@@ -123,6 +123,14 @@ components:
     properties: {item_template: transfer.transaction_history.ItemTemplate5}
     name: repeating_panel_1
     layout_properties: {grid_position: 'EBBUAS,QKMKJQ'}
+  - name: button_3
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: white, visible: true, text: back, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: true, background: '#1d86da',
+      bold: true, underline: false, icon: 'fa:backward'}
+    type: Button
+    layout_properties: {grid_position: 'BPJYUL,HZOUJF'}
+    event_bindings: {click: button_3_click}
   - name: outlined_card_1_copy
     properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
       wrap_on: mobile, col_spacing: none, spacing_above: none, col_widths: '{"VMILPR":8,"FDANOO":15,"HAKDVS":15}',
